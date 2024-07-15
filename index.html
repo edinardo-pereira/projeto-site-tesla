@@ -9,33 +9,43 @@
     <title>DevClub - Tesla</title> <!-- TITULO DO SITE -->
 </head>
 
-<body>
+<body><a name="text2"></a>
     <img src="./acents/logo.png" alt="logo da tesla" class="logo">
 
     <ul class="lista">
+        <div class="item">
+            <video src="./acents/tesla.mp4" muted loop autoplay></video>
+            <div class="info-carro">
+                <h1>Nossos Modelos</h1> <!-- TITULO -->
+                <p class="sub-titulo">Parcelar a partir de 499 dólares <a href="#comprar"></a></p>
+            </div>
+
+            <div class="rodape">
+                <button id="comprar" onclick="aparecerFormulario()">Comprar Agora</button>
+                <button onclick="aparecerTest()" class="test-drive ">Faça um Test-Drive</button>
+                <p class="texto-rodape">Não garantimos seu veículo imediatamente.Consultar estoque*</p>
+            </div>
+        </div>
+
         <!-- ITEM 1 -->
         <li class="item">
             <video src="./acents/model-y.mp4" muted loop autoplay></video>
 
             <div class="info-carro">
-                <h1>Model Y</h1> <!-- TITULO -->
-                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+                <h1>Model-Y</h1> <!-- TITULO -->
+                <p class="sub-titulo">Compre agora o seu <a href="#text2"> Tesla </a></p>
             </div>
 
-            <div class="rodape">
-                <button onclick="aparecerFormulario()">Comprar Agora</button>
-                <button class="test-drive ">Faça um Test-Drive</button>
-                <p class="texto-rodape">Não garantimos seu veículo imediatamente.Consultar estoque*</p>
-            </div>
         </li>
 
         <!-- ITEM 2 -->
         <li class="item">
             <img src="./acents/model-3.png" class="img-tesla" alt="imagem model 3">
 
+
             <div class="info-carro">
                 <h1>Model 3</h1> <!-- TITULO -->
-                <p class="sub-titulo">Compre agora o seu Tesla</p>
+                <p class="sub-titulo">Compre agora o seu <a href="#text2"> Tesla </a></p>
             </div>
         </li>
 
@@ -45,8 +55,19 @@
 
             <div class="info-carro">
                 <h1>Model X</h1> <!-- TITULO -->
-                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+                <p class="sub-titulo">Compre agora o seu <a href="#text2"> Tesla </a></p>
             </div>
+        </li>
+
+        <li class="item">
+
+            <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-Interior-Desktop.jpg"
+                class="img-tesla" alt="parte interna">
+            <div class="info-carro">
+                <h1>Parte Interna</h1> <!-- TITULO -->
+                <p class="sub-titulo">Compre agora o seu <a href="#text2"> Tesla </a></p>
+            </div>
+
         </li>
     </ul>
 
@@ -55,7 +76,11 @@
         <script type="text/javascript" src="https://form.jotform.com/jsform/241953857367067"></script>
     </div>
 
-    
+    <div class="formulario2">
+        <button onclick="desaparecerTest()">Fechar</button>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/241954199406061"></script>
+    </div>
+
 
 </body>
 <script src="scripts.js"></script>
